@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav bar with grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: inline-grid;
+            grid-template-columns: auto auto auto auto;
+
+        }
+
+        ul li {
+            list-style: none;
+            padding: 23px 0px;
+            margin: 0px 45px;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto auto;
+            /* grid-template-rows: 20px 70px; */
+            grid-gap: 2px;
+            justify-content: space-between;
+        }
+
+        .box1 {
+            height: 60vh;
+            width: 45vw;
+            background-color: blueviolet;
+        }
+
+        .box2 {
+            height: 60vh;
+            width: 45vw;
+            background-color: chartreuse;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+                <li>login</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis numquam illo asperiores
+            aperiam, explicabo deserunt excepturi ipsa, qui officiis consequatur dignissimos. Animi provident quia illo
+            deleniti itaque adipisci esse placeat, nihil ut necessitatibus, voluptates distinctio!</div>
+
+        <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque iusto sapiente, facilis
+            quod accusamus deleniti animi doloribus adipisci voluptate minus distinctio tenetur officiis id, quo
+            repellat iure consequuntur quae temporibus deserunt facere! Molestiae, tempora!</div>
+    </div>
+</body>
+
+</html>
