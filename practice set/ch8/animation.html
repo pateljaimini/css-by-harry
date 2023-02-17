@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .container
+        {
+            background-color: aqua;
+            width: 100vw;
+            height: 100vh;
+        }
+        .box
+        {
+            width: 15vw;
+            height: 30vh;
+            background-color: red;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            animation-name: widthanimate;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate-reverse;
+        }
+        @keyframes widthanimate {
+            from{
+                  width: 10vw;
+            }
+            to{
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">this is animation</div>
+    </div>
+</body>
+</html>

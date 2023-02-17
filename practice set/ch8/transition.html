@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        img
+        {
+            width: 270px;
+            height: 177px;
+            transition: width 2s ,height 4s,transform 2s;
+            /* transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease; */
+            /* transition-delay: 2s; */
+        }
+        img:hover
+        {
+            width: 400px;
+            /* height: 400px; */
+            transform: rotate(360deg);
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="photo-1468818438311-4bab781ab9b8.avif" alt="freedom image">
+        </div>
+    </div>
+</body>
+
+</html>

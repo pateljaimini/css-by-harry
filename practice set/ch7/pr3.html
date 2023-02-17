@@ -34,11 +34,11 @@
             top: 0px;
             z-index: 1;
         }
-        @media screen and(max-width: 800px) {
+        /* @media screen and(max-width: 800px) {
             body{
                      background-color: aqua;
             }
-        }
+        } */
         a img {
             height: 42px;
             width: 53px;
@@ -109,8 +109,26 @@
             padding: 10px;
             
         }
-
-        
+        .animatedbox
+        {
+            width: 0.1vw;
+            height: 0.5vh;
+            background-color: red;
+            /* z-index: 1; */
+            /* animation-direction: ; */
+            animation: animationbox 1s ease-in-out 1 normal;
+        }
+        @keyframes animationbox {
+            from
+            {
+                width: 10vw;
+            }
+            to
+            {
+                width: 100vw;
+            }
+            
+        }
     </style>
 </head>
 
@@ -129,6 +147,7 @@
     </header>
     <main>
         <!-- section,artide,aside -->
+        <div class="animatedbox"></div>
         <div class="container">
             <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores labore blanditiis ipsam
                 soluta earum, doloremque inventore, voluptatem nisi numquam amet iusto nihil laboriosam enim! Soluta
